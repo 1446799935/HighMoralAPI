@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no, width=device-width">
+    <title>HighMoralAPI</title>
+    <link rel="stylesheet" href="https://cache.amap.com/lbs/static/main.css"/>
+    <script type="text/javascript" src="https://webapi.amap.com/maps?v=1.3&key=c54e107d221526662de19cd353972c27"></script>
+     <script type="text/javascript" src="http://cache.amap.com/lbs/static/addToolbar.js"></script>
+    <link rel="stylesheet" type="text/css" href="../css/map.css">
+    <link rel="stylesheet" type="text/css" href="../Libs/css/bootstrap.css">
+</head>
+<body onload="regeocoder()">
+    <div id="mapContainer"></div>
+    <!-- 输入框 -->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-4 col-md-4 col-sm-4">
+                <div class="input-group search_input">
+                    <input type="text" class="form-control" placeholder="请输入路名/路段名" id="keyword" name="keyword" onkeyup="keyUp()" >
+                    <span class="input-group-btn">
+                        <button class="btn  search_btn" type="button">搜索</button>
+                    </span>
+                </div>
+                <ul id="addressUl" class="list-group" >
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!--路况-->
+    <div class="button-group">
+        <input type="button" class="button" id="control" value="显示/隐藏实时路况"/>
+    </div>
+    <script type="text/javascript" src="https://webapi.amap.com/demos/js/liteToolbar.js"></script>
+    <script type="text/javascript" src="../Libs/js/jquery.min.js"></script>
+    <script type="text/javascript" src="../Libs/js/bootstrap.js"></script>
+    <script type="text/javascript" src="../js/map.js"></script>
+</body>
+</html>
